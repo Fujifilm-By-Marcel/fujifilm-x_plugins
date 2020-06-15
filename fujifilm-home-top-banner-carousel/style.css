@@ -1,0 +1,111 @@
+.top__firstview .inner{
+	padding-top:0;	
+}
+
+.homepage-banner-carousel-container{
+	padding-top:72px;
+}
+@media (max-width:1200px){
+	.homepage-banner-carousel-container{
+		padding-top:48px;
+	}
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.homepage-banner-carousel {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.homepage-banner-carousel img{
+	width:100%;	
+}
+
+/* Hide the images by default */
+.homepage-banner-mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.homepage-banner-prev, .homepage-banner-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none !important;
+}
+
+/* Position the "next button" to the right */
+.homepage-banner-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.homepage-banner-prev:hover, .homepage-banner-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.homepage-banner-dots {
+	text-align:center;
+	margin:10px 0;
+}
+.homepage-banner-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .homepage-banner-dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.homepage-banner-fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.banner-Desktop, .banner-Tablet, .banner-Mobile{
+	display:none;
+}
+@media (min-width:768px){
+	.banner-Desktop { display:block }
+}
+
+@media (min-width:501px) and (max-width:767px){
+	.banner-Tablet { display:block }
+}
+
+@media (max-width:500px){
+	.banner-Mobile { display:block }
+}
+
